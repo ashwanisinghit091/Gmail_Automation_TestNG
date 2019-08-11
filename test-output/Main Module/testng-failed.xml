@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Main Module]">
+  <parameter name="subject" value="automated mail"/>
+  <parameter name="username" value="ashwanisinghit091@gmail.com"/>
+  <test name="Module1">
+    <parameter name="subject" value="automated mail"/>
+    <parameter name="username" value="ashwanisinghit091@gmail.com"/>
+    <classes>
+      <class name="Gmail.Gamil_Login"/>
+      <class name="Gmail.Gmail_Login1"/>
+      <class name="Gmail.Gmail_Login2"/>
+      <class name="Gmail.Gmail_Login3"/>
+      <class name="Gmail.Gmail_Login4"/>
+      <class name="Gmail.Gmail_Login5"/>
+    </classes>
+  </test> <!-- Module1 -->
+  <test name="Module1(failed)">
+    <parameter name="subject" value="automated mail"/>
+    <parameter name="username" value="ashwanisinghit091@gmail.com"/>
+    <classes>
+      <class name="Gmail.Gmail_Login4">
+        <methods>
+          <include name="invoke_browser"/>
+          <include name="j"/>
+        </methods>
+      </class> <!-- Gmail.Gmail_Login4 -->
+      <class name="Gmail.Gmail_Login3">
+        <methods>
+          <include name="invoke_browser"/>
+          <include name="j"/>
+        </methods>
+      </class> <!-- Gmail.Gmail_Login3 -->
+      <class name="Gmail.Gmail_Login2">
+        <methods>
+          <include name="Gmaill2"/>
+          <include name="invoke_browser"/>
+          <include name="j"/>
+        </methods>
+      </class> <!-- Gmail.Gmail_Login2 -->
+      <class name="Gmail.Gamil_Login">
+        <methods>
+          <include name="invoke_browser"/>
+          <include name="j"/>
+        </methods>
+      </class> <!-- Gmail.Gamil_Login -->
+      <class name="Gmail.Gmail_Login1">
+        <methods>
+          <include name="invoke_browser"/>
+          <include name="j"/>
+        </methods>
+      </class> <!-- Gmail.Gmail_Login1 -->
+      <class name="Gmail.Gmail_Login5">
+        <methods>
+          <include name="invoke_browser"/>
+          <include name="j"/>
+        </methods>
+      </class> <!-- Gmail.Gmail_Login5 -->
+    </classes>
+  </test> <!-- Module1(failed) -->
+</suite> <!-- Failed suite [Main Module] -->

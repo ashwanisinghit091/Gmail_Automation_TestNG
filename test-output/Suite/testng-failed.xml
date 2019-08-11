@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Module1">
+    <classes>
+      <class name="Gmail.Gmail_Login2"/>
+      <class name="Gmail.Gamil_Login"/>
+      <class name="Gmail.Gmail_Login3"/>
+      <class name="Gmail.Gmail_Login4"/>
+      <class name="Gmail.Gmail_Login5"/>
+      <class name="Gmail.Gmail_Login1"/>
+    </classes>
+  </test> <!-- Module1 -->
+  <test name="Module1(failed)">
+    <classes>
+      <class name="Gmail.Gmail_Login2">
+        <methods>
+          <include name="invoke_browser"/>
+          <include name="j"/>
+        </methods>
+      </class> <!-- Gmail.Gmail_Login2 -->
+      <class name="Gmail.Gmail_Login1">
+        <methods>
+          <include name="Gmaill1"/>
+        </methods>
+      </class> <!-- Gmail.Gmail_Login1 -->
+      <class name="Gmail.Gmail_Login5">
+        <methods>
+          <include name="Gmaill5"/>
+        </methods>
+      </class> <!-- Gmail.Gmail_Login5 -->
+      <class name="Gmail.Gmail_Login3">
+        <methods>
+          <include name="Gmaill3"/>
+        </methods>
+      </class> <!-- Gmail.Gmail_Login3 -->
+      <class name="Gmail.Gmail_Login4">
+        <methods>
+          <include name="Gmaill4"/>
+        </methods>
+      </class> <!-- Gmail.Gmail_Login4 -->
+    </classes>
+  </test> <!-- Module1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
